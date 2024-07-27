@@ -6,7 +6,7 @@
         <v-divider></v-divider>
         <v-row>
           <v-col cols="12">
-            <v-card class="education-card">
+            <v-card class="card-tilt education-card">
               <v-card-title>
                 <strong>10/2018 – 02/2022</strong>
               </v-card-title>

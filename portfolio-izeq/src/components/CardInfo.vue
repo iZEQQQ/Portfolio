@@ -1,6 +1,6 @@
 <template>
   <v-container class="d-flex justify-center align-center" fluid>
-    <v-card class="playing-card" elevation="2">
+    <v-card class="playing-card card-tilt" elevation="2">
       <!-- Top-left and Bottom-right corner numbers -->
       <div class="corner top-left">
         <v-icon :style="{ color: suitColors[suit] }">{{

@@ -7,10 +7,36 @@ body {
   color: #d8d2d0;
   margin-top: 60px;
   margin-left: 2%;
-  background-color: #3b3b3b;
+  background-color: #292828;
   font-size: larger;
 }
 
 h1 {
-    color:#d34418;
+  color: #d34418;
+}
+.card-tilt {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  perspective: 1000px; /* 3D perspective */
+  position: relative;
+  overflow: hidden;
+  background-color: #3b3b3b;
+}
+
+.card-tilt:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.card-tilt .v-card__title,
+.card-tilt .v-card__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card-tilt:active {
+  transform: scale(0.98);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

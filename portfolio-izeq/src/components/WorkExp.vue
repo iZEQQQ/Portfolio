@@ -7,7 +7,7 @@
         <v-row>
           <!-- Hilti AG Experience -->
           <v-col cols="12" md="6" lg="4">
-            <v-card class="mb-4 job-card">
+            <v-card class="card-tilt mb-4 job-card">
               <v-card-title>
                 <strong>09/2023 – 08/2024</strong>
               </v-card-title>
@@ -81,7 +81,7 @@
 
           <!-- Yumasoft Sp. z o. o Experience -->
           <v-col cols="12" md="6" lg="4">
-            <v-card class="mb-4 job-card">
+            <v-card class="card-tilt mb-4 job-card">
               <v-card-title>
                 <strong>07/2021 – 08/2023</strong>
               </v-card-title>
