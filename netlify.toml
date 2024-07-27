@@ -1,4 +1,4 @@
 [build]
   base = "portfolio-izeq" # Directory containing package.json
-  publish = "portfolio-izeq/dist" # Directory containing built files
+  publish = "dist" # Directory containing built files
   command = "npm run build" # Build command
