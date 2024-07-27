@@ -1,7 +1,4 @@
 [build]
-  base = "Portfolio/portfolio-izeq" # Directory where your package.json is located
-  publish = "Portfolio/portfolio-izeq/dist" # Directory where the built files are located
+  base = "Portfolio/portfolio-izeq" # Directory containing package.json
+  publish = "Portfolio/portfolio-izeq/dist" # Directory containing built files
   command = "npm run build" # Build command
-
-[context.production.environment]
-  NODE_VERSION = "18" # Optional: Specify the Node.js version if needed
