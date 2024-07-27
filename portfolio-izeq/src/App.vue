@@ -22,6 +22,7 @@
           </v-card>
         </v-col>
       </v-row>
+      <MouseFollowCircle />
     </v-container>
   </v-app>
 </template>
@@ -32,6 +33,7 @@ import HelloWorld from "./components/HelloWorld.vue";
 import WorkExp from "./components/WorkExp.vue";
 import EducationHistory from "./components/EducationHistory.vue";
 import TechStack from "./components/TechStack.vue";
+import MouseFollowCircle from "./components/MouseFollowCircle.vue";
 
 export default defineComponent({
   name: "App",
@@ -40,62 +42,7 @@ export default defineComponent({
     WorkExp,
     EducationHistory,
     TechStack,
-  },
-  setup() {
-    const myCard = ref<HTMLElement | null>(null);
-    const myCard2 = ref<HTMLElement | null>(null);
-
-    const handleMouseMove = (event: MouseEvent) => {
-      const card = event.currentTarget as HTMLElement;
-      const { left, top, width, height } = card.getBoundingClientRect();
-      const x = event.clientX - left;
-      const y = event.clientY - top;
-      const xPercent = (x / width) * 100;
-      const yPercent = (y / height) * 100;
-      card.style.transform = `rotateX(${(yPercent - 50) * 0.2}deg) rotateY(${
-        (xPercent - 50) * 0.2
-      }deg)`;
-    };
-
-    const handleMouseEnter = (event: MouseEvent) => {
-      const card = event.currentTarget as HTMLElement;
-      card.style.transition = "transform 0.2s ease, box-shadow 0.2s ease";
-      card.style.boxShadow = "0 12px 24px rgba(0, 0, 0, 0.3)";
-    };
-
-    const handleMouseLeave = (event: MouseEvent) => {
-      const card = event.currentTarget as HTMLElement;
-      card.style.transform = "rotateX(0deg) rotateY(0deg)";
-      card.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.2)";
-    };
-
-    onMounted(() => {
-      if (myCard.value) {
-        myCard.value.addEventListener("mousemove", handleMouseMove);
-        myCard.value.addEventListener("mouseenter", handleMouseEnter);
-        myCard.value.addEventListener("mouseleave", handleMouseLeave);
-      }
-      if (myCard2.value) {
-        myCard2.value.addEventListener("mousemove", handleMouseMove);
-        myCard2.value.addEventListener("mouseenter", handleMouseEnter);
-        myCard2.value.addEventListener("mouseleave", handleMouseLeave);
-      }
-    });
-
-    onUnmounted(() => {
-      if (myCard.value) {
-        myCard.value.removeEventListener("mousemove", handleMouseMove);
-        myCard.value.removeEventListener("mouseenter", handleMouseEnter);
-        myCard.value.removeEventListener("mouseleave", handleMouseLeave);
-      }
-      if (myCard2.value) {
-        myCard2.value.removeEventListener("mousemove", handleMouseMove);
-        myCard2.value.removeEventListener("mouseenter", handleMouseEnter);
-        myCard2.value.removeEventListener("mouseleave", handleMouseLeave);
-      }
-    });
-
-    return { myCard, myCard2 };
+    MouseFollowCircle,
   },
 });
 </script>
