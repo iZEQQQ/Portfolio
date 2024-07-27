@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap");
+
+body {
+  font-family: "Source Code Pro", monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #d8d2d0;
+  margin-top: 60px;
+  margin-left: 2%;
+  background-color: #3b3b3b;
+}
+
+h1 {
+    color:#d34418;
+}
