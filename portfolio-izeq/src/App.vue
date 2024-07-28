@@ -1,6 +1,6 @@
 <template>
-  <StickyLamp />
-  <v-app>
+  <StickyLamp class="slide-in" />
+  <v-app class="slide-in-right">
     <v-container fluid>
       <HelloWorld />
       <v-row no-gutters>
@@ -74,6 +74,36 @@ export default defineComponent({
 
 .v-col {
   padding: 0;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.7s ease-out;
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-right {
+  animation: slideInFromRight 0.7s ease-out;
 }
 
 /* Mobile Styles */
