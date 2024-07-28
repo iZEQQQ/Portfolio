@@ -1,4 +1,5 @@
 <template>
+  <StickyLamp />
   <v-app>
     <v-container fluid>
       <HelloWorld />
@@ -36,6 +37,7 @@ import WorkExp from "./components/WorkExp.vue";
 import EducationHistory from "./components/EducationHistory.vue";
 import TechStack from "./components/TechStack.vue";
 import MouseFollowCircle from "./components/MouseFollowCircle.vue";
+import StickyLamp from "./components/StickyLamp.vue";
 
 export default defineComponent({
   name: "App",
@@ -45,6 +47,7 @@ export default defineComponent({
     EducationHistory,
     TechStack,
     MouseFollowCircle,
+    StickyLamp,
   },
 });
 </script>

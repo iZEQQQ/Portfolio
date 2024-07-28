@@ -1,6 +1,5 @@
 <template>
   <div class="hello">
-    <v-icon size="larger" class="inline-icon">mdi-code-block-tags</v-icon>
     <h1 class="hi">Hello, Grüezi, Cześć</h1>
     <h3 class="name">
       I'm Jakub. Software developer dedicated to clean code by day and an avid
