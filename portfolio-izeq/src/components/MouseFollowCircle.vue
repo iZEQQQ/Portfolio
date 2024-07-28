@@ -52,6 +52,7 @@ const circles = ref([]);
 const coords = ref({ x: 0, y: 0 });
 const circleColors = ref(colors);
 const selectedIndex = ref(null);
+const isMobile = ref(false);
 
 const initializeCircles = () => {
   circles.value = Array.from({ length: 20 }, (_, index) => ({
@@ -85,14 +86,25 @@ const selectCircle = (index) => {
   selectedIndex.value = index;
 };
 
+const detectMobile = () => {
+  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  isMobile.value =
+    /android|iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
+};
+
 onMounted(() => {
-  initializeCircles();
-  window.addEventListener("mousemove", updateCoords);
-  animateCircles();
+  detectMobile();
+  if (!isMobile.value) {
+    initializeCircles();
+    window.addEventListener("mousemove", updateCoords);
+    animateCircles();
+  }
 });
 
 onBeforeUnmount(() => {
-  window.removeEventListener("mousemove", updateCoords);
+  if (!isMobile.value) {
+    window.removeEventListener("mousemove", updateCoords);
+  }
 });
 </script>
 
