@@ -9,6 +9,7 @@ body {
   margin-left: 2%;
   background-color: #292828;
   font-size: larger;
+  cursor: none;
 }
 
 h1 {

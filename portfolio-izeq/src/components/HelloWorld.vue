@@ -23,10 +23,6 @@ h3 {
   text-align: start;
 }
 .inline-icon {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 5px;
-  margin-right: 5px;
   position: relative; /* Required for z-index to work */
   z-index: 10; /* Adjust the value as needed */
 }
