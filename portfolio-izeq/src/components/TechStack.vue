@@ -1,7 +1,6 @@
 <template>
   <v-container fluid>
-    <v-card-title>Tech Stack</v-card-title>
-    <v-divider></v-divider>
+    <v-card-title class="title">Tech Stack</v-card-title>
     <v-row class="tech-stack" no-gutters>
       <!-- Iterate through techTypes to create CardInfo components -->
       <v-col

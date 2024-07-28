@@ -14,6 +14,17 @@ body {
 h1 {
   color: #d34418;
 }
+
+.title {
+  color: #d34418;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: larger;
+  display: flex;
+  align-items: center; /* Center horizontally */
+  justify-content: center;
+}
+
 .card-tilt {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

@@ -9,6 +9,7 @@
             <v-card-text>
               <WorkExp />
               <EducationHistory />
+              <v-icon size="larger">mdi-bike-pedal-mountain</v-icon>
             </v-card-text>
           </v-card>
         </v-col>
@@ -18,6 +19,7 @@
           <v-card class="card-tilet mb-4">
             <v-card-text>
               <TechStack />
+              <v-icon size="larger">mdi-ski</v-icon>
             </v-card-text>
           </v-card>
         </v-col>

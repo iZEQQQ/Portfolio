@@ -1,9 +1,8 @@
 <template>
   <v-container>
     <v-card class="main-card">
-      <v-card-title>Education</v-card-title>
+      <v-card-title class="title">Education</v-card-title>
       <v-card-text>
-        <v-divider></v-divider>
         <v-row>
           <v-col cols="12">
             <v-card class="card-tilt education-card">
@@ -58,7 +57,6 @@ export default {
 }
 
 .education-card {
-  border: 1px solid #ccc;
   border-radius: 8px;
   padding: 20px;
 }

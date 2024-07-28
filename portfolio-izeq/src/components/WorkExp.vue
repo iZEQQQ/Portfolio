@@ -1,8 +1,7 @@
 <template>
   <v-container>
     <v-card class="mb-4 main-card">
-      <v-card-title>Professional Experience</v-card-title>
-      <v-divider></v-divider>
+      <v-card-title class="title">Professional Experience</v-card-title>
       <v-card-text>
         <v-row>
           <!-- Hilti AG Experience -->
@@ -178,7 +177,6 @@ export default {
 }
 
 .job-card {
-  border: 1px solid #ccc;
   border-radius: 8px;
   padding: 20px;
 }

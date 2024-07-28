@@ -110,7 +110,6 @@ export default defineComponent({
   align-items: center;
   justify-content: center;
   text-align: center;
-  border: 2px solid #000; /* Border to make the card visible */
   border-radius: 8px; /* Rounded corners for better appearance */
 }
 
