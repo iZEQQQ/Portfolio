@@ -2,7 +2,7 @@
   <div class="hello">
     <h1 class="hi">Hello, Grüezi, Cześć</h1>
     <h3 class="name">
-      I'm Jakub. Software developer dedicated to clean code by day and an avid
+      I'm Jakub. Software developer dedicated to clean code by day, an avid
       mountian biker and skier on weekends.
     </h3>
   </div>
